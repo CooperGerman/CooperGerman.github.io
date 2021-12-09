@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "c43686c7368ba542298f4897ddf88234",
+  "main.dart.js": "bb1fc5d30748089018b609b3ceebc1da",
 "version.json": "d7243f6c03a328a66290311f0f497ed1",
 "assets/ressources/26665-nader-chabaane-sumino-keiko3-ok.jpg": "8bf09ebe63d4f30eba436fce58f27199",
 "assets/ressources/5627028.png": "bd47051a4efc40d3beee794b5c9dbc27",
@@ -15,8 +15,8 @@ const RESOURCES = {
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/AssetManifest.json": "8ce025ca5eadd19d0899808f819327ee",
-"index.html": "8da18b6c9afc577e0653f8c8339df17a",
-"/": "8da18b6c9afc577e0653f8c8339df17a",
+"index.html": "3842514913ebbcb5074a1851633871c5",
+"/": "3842514913ebbcb5074a1851633871c5",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "manifest.json": "d8d86055f396da577c3809e06ff975d6",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
