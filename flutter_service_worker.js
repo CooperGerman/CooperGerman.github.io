@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "ad4774b3b7fadd6449140b092952fe41",
+  "main.dart.js": "5d6dbbf95a2d1fbb4e9e8e42c05e9e7b",
 "version.json": "fc609ec2168bd04bb9ae41924c0403cb",
 "canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
 "canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
@@ -11,6 +11,7 @@ const RESOURCES = {
 "canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
 "assets/ressources/26665-nader-chabaane-sumino-keiko3-ok.jpg": "8bf09ebe63d4f30eba436fce58f27199",
 "assets/ressources/5627028.png": "bd47051a4efc40d3beee794b5c9dbc27",
+"assets/ressources/pngegg.png": "56b2b9aad87af574ca3bef38d3854768",
 "assets/ressources/pexels-chris-f-1283219-1440x960.jpg": "81db8ba43a0cfc42cff167d16628874e",
 "assets/ressources/how-to-measure-a-cocktail-using-parts-760305-019-c18ecbbe4af7430fbf1442dc321aea51.jpg": "564dcbdef8df2158c76a9e5bb78332ec",
 "assets/ressources/AdobeStock_195186798-1440x960.jpeg": "c64fcf9dedab08c9956aa17ed4ea9082",
@@ -18,9 +19,9 @@ const RESOURCES = {
 "assets/NOTICES": "6bd2825f12f0d3706b92171fff315a8d",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/AssetManifest.json": "8ce025ca5eadd19d0899808f819327ee",
-"index.html": "c9cc0f1a647c86c76407cebd45e8fa76",
-"/": "c9cc0f1a647c86c76407cebd45e8fa76",
+"assets/AssetManifest.json": "2ff0241ddba3840e2350917c6d6c77bb",
+"index.html": "7b33faa03edb68fa669d8a0fe6ff76ea",
+"/": "7b33faa03edb68fa669d8a0fe6ff76ea",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "manifest.json": "d8d86055f396da577c3809e06ff975d6",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
