@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "821ea59f1f05e998d6e4ba698d1fac1c",
+  "main.dart.js": "0d1c670427af988b01460c066ae3a907",
 "version.json": "fc609ec2168bd04bb9ae41924c0403cb",
 "canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
 "canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
@@ -13,15 +13,16 @@ const RESOURCES = {
 "assets/ressources/5627028.png": "bd47051a4efc40d3beee794b5c9dbc27",
 "assets/ressources/pngegg.png": "56b2b9aad87af574ca3bef38d3854768",
 "assets/ressources/pexels-chris-f-1283219-1440x960.jpg": "81db8ba43a0cfc42cff167d16628874e",
+"assets/ressources/blog-beakers-science.png": "f8aa8bf6f93c98762b140e518a5bbc7f",
 "assets/ressources/how-to-measure-a-cocktail-using-parts-760305-019-c18ecbbe4af7430fbf1442dc321aea51.jpg": "564dcbdef8df2158c76a9e5bb78332ec",
 "assets/ressources/AdobeStock_195186798-1440x960.jpeg": "c64fcf9dedab08c9956aa17ed4ea9082",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/NOTICES": "6bd2825f12f0d3706b92171fff315a8d",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/AssetManifest.json": "2ff0241ddba3840e2350917c6d6c77bb",
-"index.html": "d9ebab12adf92f9aa14b885797222395",
-"/": "d9ebab12adf92f9aa14b885797222395",
+"assets/AssetManifest.json": "63ca4806e390faab9bca9ba85f61ac83",
+"index.html": "e22ee0ed26cb31f051b1f9e88f20a503",
+"/": "e22ee0ed26cb31f051b1f9e88f20a503",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "manifest.json": "d8d86055f396da577c3809e06ff975d6",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
