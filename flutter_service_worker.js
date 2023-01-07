@@ -3,12 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "4a0ddb1afc8e6ca0a3991511ea08ea2c",
+  "main.dart.js": "ca0b6e1272b9b4862e622d6cf3cd6ae4",
 "version.json": "fc609ec2168bd04bb9ae41924c0403cb",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "assets/ressources/26665-nader-chabaane-sumino-keiko3-ok.jpg": "8bf09ebe63d4f30eba436fce58f27199",
 "assets/ressources/5627028.png": "bd47051a4efc40d3beee794b5c9dbc27",
 "assets/ressources/pngegg.png": "56b2b9aad87af574ca3bef38d3854768",
@@ -17,12 +18,13 @@ const RESOURCES = {
 "assets/ressources/how-to-measure-a-cocktail-using-parts-760305-019-c18ecbbe4af7430fbf1442dc321aea51.jpg": "564dcbdef8df2158c76a9e5bb78332ec",
 "assets/ressources/AdobeStock_195186798-1440x960.jpeg": "c64fcf9dedab08c9956aa17ed4ea9082",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/NOTICES": "895384f7d4f9a38eca57e2c9d59d5e04",
+"assets/NOTICES": "1d9fcc5487b5e02126eb445bd5e26047",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
+"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/AssetManifest.json": "63ca4806e390faab9bca9ba85f61ac83",
-"index.html": "b23c20424e6103ad59026c6307dd8a83",
-"/": "b23c20424e6103ad59026c6307dd8a83",
+"assets/shaders/ink_sparkle.frag": "0f2e44c7a8c017b88cd30136264fcd29",
+"index.html": "acfc000fbc195ec3341d33ec90e06f24",
+"/": "acfc000fbc195ec3341d33ec90e06f24",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "manifest.json": "d8d86055f396da577c3809e06ff975d6",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -32,10 +34,8 @@ const RESOURCES = {
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "/",
-"main.dart.js",
+  "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -134,9 +134,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
